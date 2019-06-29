@@ -17,7 +17,7 @@ class AppBuilder:
         @app.route('/registration', metod=['GET'])
         def go_to_registration():
             return wc.render_registration_form()
-        
+
 
 
         return app
