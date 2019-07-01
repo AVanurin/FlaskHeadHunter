@@ -15,9 +15,9 @@ CREATE TABLE profiles (
 id INT PRIMARY KEY,
 fname VARCHAR(20),
 lname VARCHAR(20),
-age INT,
-sex VARCHAR(10),
-job VARCHAR(255),
+age INT NULL,
+sex VARCHAR(10) NULL,
+job VARCHAR(255) NULL,
 FOREIGN KEY (id) REFERENCES users(id)
 );
 
@@ -27,11 +27,6 @@ CREATE TABLE summaries (
 id INT PRIMARY KEY,
 u_id INT,
 job_title VARCHAR(50),
-info TEXT(),
+info TEXT,
 FOREIGN KEY (u_id) REFERENCES users(id)
 );
-
-
-
-
-
